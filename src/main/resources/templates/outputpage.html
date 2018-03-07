@@ -46,7 +46,6 @@
                                         <th>Characteristics</th>
                                         <th>Chinese Zodiac</th>
                                         <th>Astrological Sign</th>
-                                        <!--<th sec:authorize="hasAuthority('ADMIN')">Change Status</th>-->
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -59,11 +58,7 @@
                                         <td th:text="${dateQuerry.chineseZodiac}"></td>
                                         <td th:text="${dateQuerry.astrologicalSigns}"></td>
                                         <td th:text="${dateQuerry.todaysHoroscope}"></td>
-                                        <!--<td sec:authorize="hasAuthority('ADMIN')">
-                                            <a th:unless="${lostItems.foundStatus}"  type="button" th:href="@{/tofound/{id}(id=${lostItems.id})}"  class="btn btn-dark" role="button">Change to Found</a>
 
-                                            <a th:if="${lostItems.foundStatus}" type="button" th:href="@{/tolost/{id}(id=${lostItems.id})}"   class="btn btn-dark" role="button">Change to Lost</a>
-                                        </td>-->
                                     </tr>
                                     </tbody>
                                 </table>
